@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/group_member_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:orientation="horizontal" 
+        >
+         <Button 
+             android:id="@+id/group_member_list_back_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="10dp"
+             android:text="@string/back"
+             />
+         <Button 
+             android:id="@+id/group_member_list_refresh_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="10dp"
+             android:text="@string/refresh"
+             />
+         
+     </RelativeLayout>
+      <ListView
+        android:id="@+id/group_member_list_view"
+        android:layout_below="@id/group_member_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

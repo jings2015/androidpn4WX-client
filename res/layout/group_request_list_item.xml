@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#eee"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/group_request_item_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:text="123 请求加入你的群 123 （群号：123）"
+        />
+    <TextView 
+        android:id="@+id/group_request_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:text="我是234"
+        />
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    >
+	    <Button 
+	        android:id="@+id/group_request_agree"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/handle_group_request_agree"
+	        />
+	    <Button 
+	        android:id="@+id/group_request_disagree"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/handle_group_request_disagree"
+	        />
+	    
+	</LinearLayout>
+</LinearLayout>

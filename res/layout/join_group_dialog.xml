@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/join_dialog_group_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:text="sdadf"
+        />
+    <TextView 
+        android:id="@+id/join_dialog_group_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:text="sdadf"
+        />
+    <TextView 
+        android:id="@+id/join_dialog_group_owner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:text="sdadf"
+        />
+    <TextView 
+        android:id="@+id/join_dialog_group_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:text="sdadf"
+        />
+    <TextView 
+        android:id="@+id/join_dialog_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#777"
+        android:text="@string/join_dialog_tips"
+        />
+    
+    <EditText 
+        android:id="@+id/join_dialog_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:hint="@string/join_dialog_message_hint"
+        />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#00000000"
+	    >
+	    <TextView 
+	        android:id="@+id/sender"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="18sp"
+	        android:textColor="#000"
+	        android:text="sdfa"
+	        />
+	    <TextView 
+	        android:id="@+id/time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:textColor="#000"
+	        android:text="sdfa"
+	        />
+	</RelativeLayout>
+	<TextView 
+	    android:id="@+id/message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="50dp"
+	    android:textSize="18sp"
+	    android:background="#fff"
+	    android:textColor="#000"
+	    android:text="颜色和不透明度 (alpha) 值以十六进制表示法表示。任何一种颜色的值范围都是 0 到 255（00 到 ff）。对于 alpha，00 表示完全透明，ff 表示完全不透明。表达式顺序是“aabbggrr”，其中“aa=alpha”（00 到 ff）；“bb=blue”（00 到 ff）；“gg=green”（00 到 ff)；“rr=red”（00 到 ff）。例如，如果您希望"
+	    
+	    />
+</LinearLayout>

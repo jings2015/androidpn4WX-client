@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.weixiao.activity" android:versionCode="20101028"
+	android:versionName="0.5.0">
+	<application
+	    android:name="org.litepal.LitePalApplication"
+	     android:theme="@android:style/Theme.Black.NoTitleBar"
+	     android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+		<activity android:name="org.weixiao.activity.WelcomeActivity" android:label="@string/app_name">
+			 <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="org.weixiao.activity.LoginActivity"
+		    android:label="@string/app_name" >
+		   
+		</activity>
+		
+		<activity android:name="org.weixiao.activity.MainActivity"></activity>
+		<activity android:name="org.weixiao.activity.CreateGroupActivity"></activity>
+		<activity android:name="org.weixiao.activity.NotificationListActivity"></activity>
+		<activity android:name="org.weixiao.activity.GroupRequestListActivity"></activity>
+		<activity android:name="org.weixiao.activity.GroupMemberListActivity"></activity>
+		
+		<activity android:name="org.weixiao.activity.NotificationDetailsActivity"
+			android:label="Notification Details">
+		</activity>
+		<activity android:name="org.weixiao.activity.NotificationSettingsActivity"
+			android:label="Notification Settings">
+		</activity>
+		
+		
+		
+		<service android:enabled="true"
+			android:name="org.weixiao.service.NotificationService"
+			android:label="WeixiaoNotificationService">
+			<intent-filter>
+				<action android:name="org.weixiao.service.NotificationService" />
+			</intent-filter>
+		</service>
+		<!--
+			<meta-data android:name="ANDROIDPN_API_KEY"
+			android:value="1234567890" />
+		-->
+	</application>
+	<uses-sdk android:minSdkVersion="11" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+</manifest> 

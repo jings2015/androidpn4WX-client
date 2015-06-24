@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/group_name_hint" />
+
+    <EditText
+        android:id="@+id/group_info"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/group_info_hint"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" 
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

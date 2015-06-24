@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee" >
+    
+	<RelativeLayout 
+	    android:id="@+id/main_activity_top_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:background="#000"
+	    >
+	    
+    <TextView
+        android:id="@+id/show_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="@string/account_default" />
+    
+    <Button 
+        android:id="@+id/search_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/search"
+        />
+    <Button 
+        android:id="@+id/group_request_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/search_group"
+		android:layout_marginRight="10dp"
+		android:text="@string/group_request"
+        />
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_activity_top_bar"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none" 
+            android:cacheColorHint="#00000000"
+            >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/blow_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/setting"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting" />
+
+            <Button
+                android:id="@+id/create_group"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_group" />
+
+            <Button
+                android:id="@+id/refresh"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
